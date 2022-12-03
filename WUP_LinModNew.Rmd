@@ -71,11 +71,22 @@ We can see that the prediction here is 0.70, the lower is -1.72, and the upper i
 
 #### scatterplot with model fit
   
+```{r}
+basicNN <- ggplot(data,aes(y=ARM,x=SIMS))
+basicNN + geom_point() + geom_lm()
+```
+  
 
 ## Model 2 SIM~GRIP
 
 ### Now add in scatterplot
 
+```{r}
+basicNN <- ggplot(data,aes(y=GRIP,x=SIMS))
+basicNN + geom_point() + geom_lm()
+```
+
+This is a positive linear fit with the line going right and up for GRIP and SIMS. 
 
 ### Numerical results 
 
