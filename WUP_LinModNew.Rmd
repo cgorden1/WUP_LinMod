@@ -44,6 +44,11 @@ This scatter plot shows us that it is a positive linear relationship. The fit li
 
 ### Numerical results
 
+```{r}
+cor(SIMS ~ ARM,data=data)
+```
+
+The correlation between SIMS and ARM is o.68 which means it is a positive correlation. 
 
 ### Inferential  (Build model.1)
 
