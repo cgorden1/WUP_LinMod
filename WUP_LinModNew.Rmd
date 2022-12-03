@@ -136,7 +136,7 @@ The correlation number according to the numerical results is 0.732 so this is a 
   
 ### Inferential  (Build 2-dimentional model.3)
 ```{r}
-model.3 <- lm(SIMS~ARM,GRIP,data=data)
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
 
@@ -145,11 +145,17 @@ summary.lm(model.3)
 ```{r}
 predict(model.3,mydat,interval = "prediction")
 ```
-  The linear fit in this prediction is 0.893, the lower is -1.678, and the upper is 3.461.
+  The linear fit in this prediction is 0.149, the lower is -2.132, and the upper is 2.431.
 
 ## Comparing nested models ANOVA Test
 
 ### Model.1 vs Model.3
+```{r}
+anova(model.1,model.3)
+```
+
+This anova test shows us that model 3 is better than model 1.
+
 ### Model.2 vs Model.3
 
 ## Informally compare Model.1 with model.2
