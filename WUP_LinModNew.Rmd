@@ -158,5 +158,11 @@ This anova test shows us that model 3 is better than model 1.
 
 ### Model.2 vs Model.3
 
+```{r}
+anova(model.2,model.3)
+```
+
+This anova test shows us that once again, model 3 is better than model 2.
+
 ## Informally compare Model.1 with model.2
 
