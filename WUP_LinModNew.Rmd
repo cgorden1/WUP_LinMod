@@ -1,7 +1,7 @@
 ---
 title: "linear model from Web"
-author: "Your Name"
-date: "Put semester and year"
+author: "Cadence Gorden"
+date: "Fall 2022"
 output:
    html_document:
          toc: true
@@ -34,6 +34,13 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 ## Model 1 SIM~ARMS
 
 ### scatterplot
+
+```{r}
+basicNN <- ggplot(data,aes(y=ARM,x=SIMS))
+basicNN + geom_point() + geom_lm()
+```
+
+This scatter plot shows us that it is a positive linear relationship. The fit line is going up to the right. 
 
 ### Numerical results
 
