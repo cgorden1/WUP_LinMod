@@ -165,4 +165,8 @@ anova(model.2,model.3)
 This anova test shows us that once again, model 3 is better than model 2.
 
 ## Informally compare Model.1 with model.2
+```{r}
+anova(model.1,model.2)
+```
 
+Through these anova results we can see that model 1 is better than model 2 models 1's adjusted r square value is lower. From comparing them we did not get a P because both values have nested data in them. Overall the best model was model 3. Model 3 had the highest adjusted r squared and the lowest residual error. We got a p value for model 3 because both model 1 and 2 are actually nested in model 3. 
