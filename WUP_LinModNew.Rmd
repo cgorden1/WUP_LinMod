@@ -52,8 +52,22 @@ The correlation between SIMS and ARM is o.68 which means it is a positive correl
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
 #### Predict at target point
 
+```{r}
+mydat<- data.frame(GRIP = 94, ARM =88)
+```
+
+```{r}
+predict(model.1,mydat,interval = "prediction")
+```
+
+We can see that the prediction here is 0.70, the lower is -1.72, and the upper is 3.13. 
 
 #### scatterplot with model fit
   
