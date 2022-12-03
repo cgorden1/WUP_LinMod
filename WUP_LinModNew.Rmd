@@ -90,6 +90,11 @@ This is a positive linear fit with the line going right and up for GRIP and SIMS
 
 ### Numerical results 
 
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
+The numerical data shows us that the linear correltation is 0l63 which is a positive correlation. 
 
 ### Inferential  (Build model.2)
   
